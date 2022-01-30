@@ -7,15 +7,15 @@ export default function ChatPage() {
   // minha lógica vai aqui
   const [mensagem, setMensagem] = React.useState("");
   const [listaMensagem, setListaMensagem] = React.useState([]);
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MDg2OTA3MywiZXhwIjoxOTU2NDQ1MDczfQ.343ibq7UYFPDdyfsfGmEqUma01RW7P7KC9U2MDAGSkI';
-  const SUPABASE_URL = 'https://kysxypdmtxjlkdysdlas.supabase.co';
+  //const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MDg2OTA3MywiZXhwIjoxOTU2NDQ1MDczfQ.343ibq7UYFPDdyfsfGmEqUma01RW7P7KC9U2MDAGSkI';
+ // const SUPABASE_URL = 'https://kysxypdmtxjlkdysdlas.supabase.co';
   const supabaseClient = createClient(SUPABASE_URL, SUPABASE_URL);
-  const dadosDoSupabase = supabaseClient
-    .from('mensagens')
-    .select('*')
-    .then((dados)=>{
-      console.log(dados);
-    })
+  //const dadosDoSupabase = supabaseClient
+  //  .from('mensagens')
+  //  .select('*')
+  //  .then((dados)=>{
+  //    console.log(dados);
+  //  })
     
 
   //Usuario
